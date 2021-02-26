@@ -50,8 +50,8 @@ nav a{
 
 /* tutti i p hanno la stessa dimesione */
 p{
-  font-size: 14px;
-  text-overflow: ellipsis;
+  font-size: 14px;/* 
+  text-overflow: ellipsis; */
 }
 
 /* elementi comuni dell'immagine di sfondo */
@@ -69,17 +69,23 @@ p{
 }
 
 .banner .sfondo-banner{
-  height: 350px;
+  min-height: 400px;
   border-radius: 10px;
   background-color: rgb(160, 160, 160, 0.5);
 }
 
 .banner .testo{
-  width: 55%;
-  margin: auto;
-  padding-top: 200px;
+  width: 50%;
+  margin-left: 5%;
+  margin-right: 45%;
+  padding-top: 300px;
+  padding-left: 20px;
   padding-right: 200px;
   padding-bottom: 40px;
+}
+
+.banner h1{
+  font-size: 28px;
 }
 
 .banner p::after{
@@ -101,7 +107,7 @@ p{
   margin-bottom: 35px;
 }
 
-.box-top h2{
+.box-top h1{
   font-size: 30px;
   font-weight: 900;
 }
