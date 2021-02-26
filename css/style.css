@@ -7,16 +7,36 @@
 .container{
   width: 80%;
   margin: auto;
+  font-family: 'Montserrat', sans-serif;
 }
 
 header, main, section, footer{
   width: 100%;
 }
 
+/* content related to header */
 header{
-  height: 100px;
-  margin: 20px 0;
+  margin-bottom: 20px;
   background-color: palevioletred;
+}
+
+.logo>img{
+  width: 150px;
+  border-right: 1px solid #A0A0A0;
+  padding-right: 20px;
+}
+
+nav{
+  margin: 20px 0;
+}
+
+nav li{
+  list-style: none;
+  display: inline;
+  text-transform: uppercase;
+  padding-right: 20px;
+  font-size: 14px;
+  color: #A0A0A0;
 }
 
 /* clearfix */
