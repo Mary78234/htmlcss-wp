@@ -4,27 +4,26 @@
   padding: 0;
 }
 
+/* margini e carattere di tutta la pagina */
 .container{
   width: 80%;
   margin: auto;
   font-family: 'Montserrat', sans-serif;
 }
 
-header, main, section, footer{
-  width: 100%;
-}
-
-/* content related to header */
+/* margine basso */
 header{
   margin-bottom: 20px;
 }
 
+/* logo dell'header */
 .logo>img{
   width: 15%;
   border-right: 1px solid #A0A0A0;
   padding-right: 20px;
 }
 
+/* specifiche del nav */
 nav{
   margin: 20px 0;
 }
@@ -45,40 +44,45 @@ nav li{
   clear: both;
 }
 
-/* section 1*/
-section.box-image{
-  margin: 15px 0;
-  height: 350px;
+/* tutti i p hanno la stessa dimesione */
+p{
+  text-size: 12px;
+  text-overflow: ellipsis;
+}
+
+/* elementi comuni dell'immagine di sfondo */
+.sfondo-1{
   border-radius: 10px;
-  color: #FDFDFD;
-  background-image: url('../img/banner.jpg');
   background-size: cover;
   background-position: center;
 }
 
-.box-image .gray{
+/* section 1 banner princiaple*/
+.banner{
+  margin: 15px 0;
+  height: 350px;
+  color: #FDFDFD;
+  background-image: url('../img/banner.jpg');
+}
+
+.banner .sfondo-banner{
   height: 350px;
   border-radius: 10px;
   background-color: rgb(160, 160, 160, 0.5);
 }
 
-.box-image .testo{
+.banner .testo{
   padding-top: 200px;
   padding-left: 30px;
   padding-right: 200px;
 }
 
-.box-image p{
-  text-size: 12px;
-  text-overflow: ellipsis;
-}
-
-.box-image .testo>p::after{
+.banner p::after{
   content: '...';
 }
 
 /* boxes in section 2 */
-section.box-content{
+.box-content{
   margin: 15px 0 5px;
 }
 
@@ -91,6 +95,7 @@ section.box-content{
   width: 100%;
   margin-bottom: 35px;
 }
+
 .box-top h2{
   font-size: 30px;
   font-weight: 900;
@@ -102,51 +107,42 @@ section.box-content{
 }
 
 /* sfondo grigio colonne */
-.sfondo-grigio{
+.sfondo-2{
   height: 150px;
   border-radius: 10px;
   background-color: rgb(160, 160, 160, 0.5);
 }
 
-/* box left  */
+/* boxes dimensioni e margini*/
 .box-left{
   width: 23%;
 }
 
-.box-left .img-1{
-  height: 150px;
-  border-radius: 10px;
-  background-image: url('../img/img-1.jpg');
-  background-size: cover;
-  background-position: center;
-}
-
-/* box center */
 .box-center{
   width: 50%;
   margin-left: 2%;
   margin-right: 2%;
 }
 
-.box-center .banner-2{
-  height: 150px;
-  border-radius: 10px;
-  background-image: url('../img/banner-2.jpg');
-  background-size: cover;
-  background-position: center;
-}
-
-/* box right */
 .box-right{
   width: 23%;
 }
 
-.box-right .img-3{
+/* boxes immagini */
+.img-1, .banner-2, .img-3{
   height: 150px;
-  border-radius: 10px;
+}
+
+.box-left .img-1{
+  background-image: url('../img/img-1.jpg');
+}
+
+.box-center .banner-2{
+  background-image: url('../img/banner-2.jpg');
+}
+
+.box-right .img-3{
   background-image: url('../img/img-3.jpg');
-  background-size: cover;
-  background-position: center;
 }
 
 /* footer */
@@ -154,7 +150,6 @@ footer{
   padding: 20px 0;
   text-align: center;
 }
-
 
 footer p::after{
   content: '\2665';
