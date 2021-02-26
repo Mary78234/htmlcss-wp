@@ -1,0 +1,80 @@
+/* all */
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+  width: 80%;
+  margin: auto;
+}
+
+header, main, section, footer{
+  width: 100%;
+}
+
+header{
+  height: 100px;
+  margin: 20px 0;
+  background-color: palevioletred;
+}
+
+/* clearfix */
+.clearfix::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* section */
+section.box-image{
+  margin: 15px 0;
+  height: 200px;
+  background-color: yellowgreen;
+}
+
+section.box-content{
+  margin: 15px 0 5px;
+  background-color: royalblue;
+}
+
+section.box-content{
+  background-color: blue;
+}
+
+/* boxes in section 2 */
+div.space{
+  background-color: skyblue;
+}
+
+.box-top{
+  width: 100%;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.box-left, .box-center, .box-right{
+  float: left;
+  height: 200px;
+  margin-bottom: 8px;
+}
+
+.box-left{
+  width: 23%;
+}
+
+.box-center{
+  width: 50%;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.box-right{
+  width: 23%;
+}
+
+/* footer */
+footer{
+  height: 50px;
+  background-color: purple;
+}
